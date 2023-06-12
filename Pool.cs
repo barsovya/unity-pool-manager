@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
 
+// Behaviour Pool
 public enum PoolEmptyBehaviour
 {
     AllocateMore,
@@ -11,6 +12,7 @@ public enum PoolEmptyBehaviour
     ReturnCyclicallyAlreadyGiven
 }
 
+//Pool
 [RequireComponent(typeof(PoolManager))]
 public class Pool : MonoBehaviour
 {
